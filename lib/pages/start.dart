@@ -73,67 +73,69 @@ class _StartPageState extends State<StartPage> {
                   topRight: Radius.circular(80),
                 )
               ),
-              child: Column(
-                children: [
-                  SizedBox(height: 50,),
-                  FadeAnimation(1.5, Container(
-                    padding: EdgeInsets.symmetric(horizontal: 40),
-                    child: Center(
-                      child: Text(
-                        'Easy, reliable way to take \ncare of your home',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey.shade900,
-                        ),
-                      ),
-                    ),
-                  )),
-                  SizedBox(height: 20,),
-                  FadeAnimation(1.5, Container(
-                    padding: EdgeInsets.symmetric(horizontal: 60),
-                    child: Center(
-                      child: Text(
-                        'We provide you with the best people to help take care of your home.',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.grey.shade600,
-                        ),
-                      ),
-                    ),
-                  )),
-                  FadeAnimation(1.5, Padding(
-                    padding: EdgeInsets.all(50.0),
-                    child: MaterialButton(
-                      elevation: 0,
-                      color: Colors.black,
-                      onPressed: () {
-                         Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => SelectService(),
-                          ),
-                        );
-                      },
-                      height: 55,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)
-                      ),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 50,),
+                    FadeAnimation(1.5, Container(
+                      padding: EdgeInsets.symmetric(horizontal: 40),
                       child: Center(
                         child: Text(
-                          'Get Started',
+                          'Easy, reliable way to take \ncare of your home',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey.shade900,
                           ),
                         ),
                       ),
-                    ),
-                  )),
-                ],
+                    )),
+                    SizedBox(height: 20,),
+                    FadeAnimation(1.5, Container(
+                      padding: EdgeInsets.symmetric(horizontal: 60),
+                      child: Center(
+                        child: Text(
+                          'We provide you with the best people to help take care of your home.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey.shade600,
+                          ),
+                        ),
+                      ),
+                    )),
+                    FadeAnimation(1.5, Padding(
+                      padding: EdgeInsets.all(50.0),
+                      child: MaterialButton(
+                        elevation: 0,
+                        color: Colors.black,
+                        onPressed: () {
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SelectService(),
+                            ),
+                          );
+                        },
+                        height: 55,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Get Started',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )),
+                  ],
+                ),
               ),
             ),
           )

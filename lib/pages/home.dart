@@ -192,13 +192,15 @@ class _HomePageState extends State<HomePage> {
           ),
           borderRadius: BorderRadius.circular(20.0),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.network(image, height: 45),
-            SizedBox(height: 20,),
-            Text(name, style: TextStyle(fontSize: 15),)
-          ]
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.network(image, height: 45),
+              SizedBox(height: 20,),
+              Text(name, style: TextStyle(fontSize: 15),)
+            ]
+          ),
         ),
       ),
     );
