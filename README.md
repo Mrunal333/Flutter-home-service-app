@@ -1,12 +1,11 @@
 ## Flutter Home Service Application Example - Day 35
 
 ```dart
-class Afgprogrammer extends Flutter100DaysOfCode {
+class Mrunal33 extends FlutterCode {
   video() {
     return {
       "title": "Flutter Home Service Application Example",
       "description": "Let’s make a home service application.",
-      "day": 35,
     }
   }
 }
